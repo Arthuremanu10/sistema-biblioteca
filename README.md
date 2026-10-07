@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 Sistema Biblioteca
 
 Sistema web desenvolvido para auxiliar no gerenciamento de uma biblioteca, permitindo organizar livros, alunos e empréstimos de forma simples, rápida e intuitiva.
@@ -174,3 +175,26 @@ sistema-biblioteca/
 ├── img/
 │
 └── README.md
+=======
+# Sistema Biblioteca
+
+Sistema desenvolvido para gerenciamento de uma biblioteca.
+
+## Funcionalidades
+
+- Cadastro de livros
+- Cadastro de alunos
+- Registro de empréstimos
+- Cadastro de usuários
+- Consulta de informações
+
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Desenvolvido por
+
+Nome do aluno
+>>>>>>> f4055ba3d18d21ebff4697771410c6c57e6f0df3
