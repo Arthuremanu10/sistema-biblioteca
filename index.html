@@ -1,75 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sistema Biblioteca</title>
+
+<title>Biblioteca PGFJA | Sistema de Gestão</title>
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
+<!-- CABEÇALHO -->
+<header class="header">
+
 <div class="logo">
-📚 Biblioteca
+<span class="logo-icon">▦</span>
+<span>Biblioteca</span>
 </div>
 
-<nav>
-<a href="index.html">Início</a>
+<nav class="nav">
+<a href="index.html" class="active">Início</a>
 <a href="pages/livros.html">Livros</a>
 <a href="pages/alunos.html">Alunos</a>
 <a href="pages/emprestimos.html">Empréstimos</a>
 </nav>
+
+<a href="pages/cadastro.html" class="header-button">
+Cadastrar
+</a>
+
 </header>
 
-<main class="container">
 
+<!-- CONTEÚDO PRINCIPAL -->
+<main>
+
+<!-- HERO -->
 <section class="hero">
-<div>
-<h1>Sistema de Biblioteca</h1>
+
+<div class="hero-content">
+
+<span class="eyebrow">
+SISTEMA DE BIBLIOTECA
+</span>
+
+<h1>
+Organização para uma
+<span>biblioteca mais inteligente.</span>
+</h1>
 
 <p>
-Gerencie livros, alunos e empréstimos
-de forma simples e organizada.
+Gerencie livros, alunos e empréstimos de maneira
+simples, rápida e organizada.
 </p>
 
-<a href="pages/livros.html" class="btn">
-Acessar biblioteca
+<div class="hero-buttons">
+
+<a href="pages/livros.html" class="primary-button">
+Explorar livros
 </a>
+
+<a href="pages/emprestimos.html" class="secondary-button">
+Ver empréstimos
+</a>
+
 </div>
+
+</div>
+
+
+<!-- IMAGEM -->
+<div class="hero-image">
+
+<img
+src="https://wallpaperaccess.com/full/253342.jpg"
+alt="Biblioteca com estantes de livros"
+>
+
+<div class="image-card">
+
+<strong>Biblioteca</strong>
+
+<span>
+Conhecimento ao seu alcance
+</span>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="cards">
 
-<div class="card">
-<span>📚</span>
-<h2>Livros</h2>
-<p>Cadastre e consulte os livros disponíveis.</p>
-<a href="pages/livros.html">Ver livros →</a>
+<!-- FUNCIONALIDADES -->
+<section class="features">
+
+<div class="section-heading">
+
+<span>FUNCIONALIDADES</span>
+
+<h2>
+Tudo em um só lugar.
+</h2>
+
 </div>
 
-<div class="card">
-<span>👨‍🎓</span>
-<h2>Alunos</h2>
-<p>Gerencie os alunos cadastrados.</p>
-<a href="pages/alunos.html">Ver alunos →</a>
+
+<div class="cards">
+
+<!-- LIVROS -->
+<a href="pages/livros.html" class="feature-card">
+
+<div class="feature-icon">
+▣
 </div>
 
-<div class="card">
-<span>🔄</span>
-<h2>Empréstimos</h2>
-<p>Controle empréstimos e devoluções.</p>
-<a href="pages/emprestimos.html">Ver empréstimos →</a>
+<h3>
+Livros
+</h3>
+
+<p>
+Cadastre, consulte e organize o acervo
+da biblioteca.
+</p>
+
+<span class="card-link">
+Gerenciar livros →
+</span>
+
+</a>
+
+
+<!-- ALUNOS -->
+<a href="pages/alunos.html" class="feature-card">
+
+<div class="feature-icon">
+♙
+</div>
+
+<h3>
+Alunos
+</h3>
+
+<p>
+Mantenha os dados dos alunos cadastrados
+sempre organizados.
+</p>
+
+<span class="card-link">
+Gerenciar alunos →
+</span>
+
+</a>
+
+
+<!-- EMPRÉSTIMOS -->
+<a href="pages/emprestimos.html" class="feature-card">
+
+<div class="feature-icon">
+↔
+</div>
+
+<h3>
+Empréstimos
+</h3>
+
+<p>
+Controle retiradas e devoluções de livros
+com facilidade.
+</p>
+
+<span class="card-link">
+Gerenciar empréstimos →
+</span>
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- SOBRE -->
+<section class="about">
+
+<div>
+
+<span class="eyebrow">
+SIMPLES E EFICIENTE
+</span>
+
+<h2>
+Uma biblioteca organizada começa
+com bons processos.
+</h2>
+
+<p>
+O sistema foi desenvolvido para facilitar
+o gerenciamento das principais atividades
+de uma biblioteca.
+</p>
+
+</div>
+
+
+<div class="about-number">
+
+<strong>
+01
+</strong>
+
+<span>
+Organização<br>
+e praticidade
+</span>
+
 </div>
 
 </section>
 
 </main>
 
-<footer>
-<p>© 2026 - Sistema Biblioteca</p>
+
+<!-- RODAPÉ -->
+<footer class="footer">
+
+<div class="logo">
+
+<span class="logo-icon">
+▦
+</span>
+
+Biblioteca
+
+</div>
+
+<p>
+© 2026 Sistema Biblioteca
+</p>
+
 </footer>
 
+
 <script src="js/script.js"></script>
+
 </body>
+
 </html>
