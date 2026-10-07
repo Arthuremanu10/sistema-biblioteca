@@ -2,79 +2,168 @@
 <html lang="pt-BR">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Livros - Biblioteca</title>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Livros | Biblioteca</title>
 
 <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
 <div class="logo">
-📚 Biblioteca
+<span class="logo-icon">▦</span>
+<span>Biblioteca</span>
 </div>
 
-<nav>
-<a href="../index.html">Início</a>
-<a href="livros.html">Livros</a>
-<a href="alunos.html">Alunos</a>
-<a href="emprestimos.html">Empréstimos</a>
+<nav class="nav">
+
+<a href="../index.html">
+Início
+</a>
+
+<a href="livros.html" class="active">
+Livros
+</a>
+
+<a href="alunos.html">
+Alunos
+</a>
+
+<a href="emprestimos.html">
+Empréstimos
+</a>
+
 </nav>
 
+<a href="cadastro.html" class="header-button">
+Cadastrar
+</a>
+
 </header>
+
 
 <main class="container">
 
 <section class="page">
 
-<h1>Cadastro de Livros</h1>
+<div class="page-header">
+
+<div>
+
+<span class="eyebrow">
+ACERVO
+</span>
+
+<h1>
+Livros
+</h1>
+
+<p>
+Cadastre e organize os livros
+disponíveis na biblioteca.
+</p>
+
+</div>
+
+</div>
+
 
 <form class="form" id="formLivro">
 
-<label for="titulo">Título</label>
+<div class="form-group">
+
+<label for="titulo">
+Título do livro
+</label>
+
 <input
 type="text"
 id="titulo"
-placeholder="Digite o título do livro"
+placeholder="Ex.: O Pequeno Príncipe"
 required
 >
 
-<label for="autor">Autor</label>
+</div>
+
+
+<div class="form-group">
+
+<label for="autor">
+Autor
+</label>
+
 <input
 type="text"
 id="autor"
-placeholder="Digite o autor"
+placeholder="Nome do autor"
 required
 >
 
-<label for="ano">Ano</label>
+</div>
+
+
+<div class="form-group">
+
+<label for="ano">
+Ano de publicação
+</label>
+
 <input
 type="number"
 id="ano"
-placeholder="Digite o ano"
+placeholder="Ex.: 2020"
 required
 >
 
-<button type="submit">
-Cadastrar livro
+</div>
+
+
+<button type="submit" class="primary-button">
++ Cadastrar livro
 </button>
 
 </form>
 
-<h2>Livros cadastrados</h2>
+
+<div class="table-container">
+
+<div class="table-header">
+
+<div>
+
+<h2>
+Livros cadastrados
+</h2>
+
+<p>
+Consulte os livros adicionados ao sistema.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="table-scroll">
 
 <table>
 
 <thead>
+
 <tr>
 <th>Título</th>
 <th>Autor</th>
 <th>Ano</th>
 </tr>
+
 </thead>
 
 <tbody id="listaLivros">
@@ -83,15 +172,36 @@ Cadastrar livro
 
 </table>
 
+</div>
+
+</div>
+
 </section>
 
 </main>
 
-<footer>
-<p>© 2026 - Sistema Biblioteca</p>
+
+<footer class="footer">
+
+<div class="logo">
+
+<span class="logo-icon">
+▦
+</span>
+
+Biblioteca
+
+</div>
+
+<p>
+© 2026 Sistema Biblioteca
+</p>
+
 </footer>
+
 
 <script src="../js/script.js"></script>
 
 </body>
+
 </html>
