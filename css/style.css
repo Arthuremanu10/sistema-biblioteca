@@ -1,8 +1,369 @@
-/* =========================
-PÁGINAS INTERNAS
-========================= */
-
-.container {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    :root {
+    --green-dark: #123c32;
+    --green: #176b55;
+    --green-light: #e8f2ef;
+    --white: #ffffff;
+    --background: #f7f8f7;
+    --text: #17201d;
+    --text-light: #68736f;
+    --border: #e1e6e3;
+    }
+    
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.5;
+    }
+    
+    /* =========================
+    CABEÇALHO
+    ========================= */
+    
+    .header {
+    width: 100%;
+    min-height: 76px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    }
+    
+    .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--green-dark);
+    }
+    
+    .logo-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: var(--green);
+    color: white;
+    font-size: 20px;
+    }
+    
+    .nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    }
+    
+    .nav a {
+    position: relative;
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    }
+    
+    .nav a:hover,
+    .nav a.active {
+    color: var(--green);
+    }
+    
+    .header-button {
+    padding: 11px 20px;
+    border-radius: 8px;
+    background: var(--green-dark);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    }
+    
+    .header-button:hover {
+    background: var(--green);
+    }
+    
+    /* =========================
+    HERO
+    ========================= */
+    
+    .hero {
+    width: 86%;
+    max-width: 1250px;
+    margin: 70px auto 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    }
+    
+    .hero-content {
+    max-width: 600px;
+    }
+    
+    .eyebrow {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    }
+    
+    .hero h1 {
+    margin-bottom: 25px;
+    color: var(--green-dark);
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    }
+    
+    .hero h1 span {
+    color: var(--green);
+    }
+    
+    .hero p {
+    max-width: 520px;
+    margin-bottom: 32px;
+    color: var(--text-light);
+    font-size: 18px;
+    }
+    
+    .hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    }
+    
+    .primary-button,
+    .secondary-button {
+    padding: 14px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    }
+    
+    .primary-button {
+    background: var(--green-dark);
+    color: white;
+    }
+    
+    .primary-button:hover {
+    background: var(--green);
+    }
+    
+    .secondary-button {
+    background: white;
+    color: var(--green-dark);
+    border: 1px solid var(--border);
+    }
+    
+    .secondary-button:hover {
+    border-color: var(--green);
+    }
+    
+    /* =========================
+    IMAGEM
+    ========================= */
+    
+    .hero-image {
+    position: relative;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    }
+    
+    .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    }
+    
+    .image-card {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 12px;
+    }
+    
+    .image-card strong {
+    color: var(--green-dark);
+    }
+    
+    .image-card span {
+    color: var(--text-light);
+    font-size: 12px;
+    }
+    
+    /* =========================
+    FUNCIONALIDADES
+    ========================= */
+    
+    .features {
+    width: 86%;
+    max-width: 1250px;
+    margin: 0 auto 100px;
+    }
+    
+    .section-heading {
+    margin-bottom: 30px;
+    }
+    
+    .section-heading > span {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    }
+    
+    .section-heading h2 {
+    margin-top: 8px;
+    color: var(--green-dark);
+    font-size: 34px;
+    }
+    
+    .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    }
+    
+    .feature-card {
+    padding: 30px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: 0.25s;
+    }
+    
+    .feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #b8cec6;
+    box-shadow: 0 15px 35px rgba(18, 60, 50, 0.08);
+    }
+    
+    .feature-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--green-light);
+    color: var(--green);
+    font-size: 21px;
+    }
+    
+    .feature-card h3 {
+    margin-bottom: 10px;
+    color: var(--green-dark);
+    font-size: 20px;
+    }
+    
+    .feature-card p {
+    margin-bottom: 25px;
+    color: var(--text-light);
+    font-size: 14px;
+    }
+    
+    .card-link {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 700;
+    }
+    
+    /* =========================
+    SOBRE
+    ========================= */
+    
+    .about {
+    width: 86%;
+    max-width: 1250px;
+    margin: 0 auto 100px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--green-dark);
+    border-radius: 18px;
+    color: white;
+    }
+    
+    .about .eyebrow {
+    color: #a9cfc3;
+    }
+    
+    .about h2 {
+    max-width: 650px;
+    margin-bottom: 15px;
+    font-size: 34px;
+    line-height: 1.15;
+    }
+    
+    .about p {
+    max-width: 600px;
+    color: #bdd0ca;
+    }
+    
+    .about-number {
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+    
+    .about-number strong {
+    font-size: 70px;
+    line-height: 1;
+    }
+    
+    .about-number span {
+    color: #bdd0ca;
+    text-align: right;
+    font-size: 13px;
+    }
+    
+    /* =========================
+    RODAPÉ
+    ========================= */
+    
+    .footer {
+    width: 100%;
+    padding: 30px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-top: 1px solid var(--border);
+    }
+    
+    .footer p {
+    color: var(--text-light);
+    font-size: 13px;
+    }
+    
+    /* =========================
+    PÁGINAS INTERNAS
+    ========================= */
+    
+    .container {
     width: 86%;
     max-width: 1250px;
     margin: 0 auto;
@@ -11,12 +372,9 @@ PÁGINAS INTERNAS
     .page {
     margin: 60px 0 100px;
     padding: 45px;
-    
     background: white;
-    
     border: 1px solid var(--border);
     border-radius: 18px;
-    
     box-shadow: 0 10px 30px rgba(18, 60, 50, 0.04);
     }
     
@@ -26,9 +384,7 @@ PÁGINAS INTERNAS
     
     .page-header h1 {
     margin-bottom: 8px;
-    
     color: var(--green-dark);
-    
     font-size: 38px;
     }
     
@@ -36,15 +392,16 @@ PÁGINAS INTERNAS
     color: var(--text-light);
     }
     
+    /* =========================
+    FORMULÁRIOS
+    ========================= */
+    
     .form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
-    
     padding: 25px;
-    
     background: var(--background);
-    
     border-radius: 12px;
     }
     
@@ -56,7 +413,6 @@ PÁGINAS INTERNAS
     
     .form label {
     color: var(--green-dark);
-    
     font-size: 13px;
     font-weight: 700;
     }
@@ -64,35 +420,30 @@ PÁGINAS INTERNAS
     .form input,
     .form select {
     width: 100%;
-    
     padding: 13px 14px;
-    
     border: 1px solid var(--border);
     border-radius: 8px;
-    
     background: white;
-    
     outline: none;
-    
     font-size: 14px;
-    
     transition: 0.2s;
     }
     
     .form input:focus,
     .form select:focus {
     border-color: var(--green);
-    
     box-shadow: 0 0 0 3px var(--green-light);
     }
     
     .form button {
     align-self: end;
-    
     border: none;
-    
     cursor: pointer;
     }
+    
+    /* =========================
+    TABELAS
+    ========================= */
     
     .table-container {
     margin-top: 40px;
@@ -104,52 +455,39 @@ PÁGINAS INTERNAS
     
     .table-header h2 {
     color: var(--green-dark);
-    
     font-size: 22px;
     }
     
     .table-header p {
     margin-top: 5px;
-    
     color: var(--text-light);
-    
     font-size: 14px;
     }
     
     .table-scroll {
     overflow-x: auto;
-    
     border: 1px solid var(--border);
     border-radius: 10px;
     }
     
     table {
     width: 100%;
-    
     border-collapse: collapse;
-    
     background: white;
     }
     
     th {
     padding: 15px;
-    
     background: var(--green-dark);
-    
     color: white;
-    
     text-align: left;
-    
     font-size: 13px;
     }
     
     td {
     padding: 15px;
-    
     border-bottom: 1px solid var(--border);
-    
     color: var(--text-light);
-    
     font-size: 14px;
     }
     
@@ -161,13 +499,52 @@ PÁGINAS INTERNAS
     background: var(--green-light);
     }
     
+    /* =========================
+    RESPONSIVIDADE
+    ========================= */
     
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
     
-    .page {
-    padding: 25px;
+    .header {
+    height: auto;
+    padding: 20px 6%;
+    flex-wrap: wrap;
+    gap: 18px;
+    }
     
-    margin-top: 35px;
+    .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    }
+    
+    .hero {
+    grid-template-columns: 1fr;
+    margin-top: 45px;
+    gap: 40px;
+    }
+    
+    .hero-image {
+    height: 400px;
+    }
+    
+    .cards {
+    grid-template-columns: 1fr;
+    }
+    
+    .about {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    }
+    
+    .about-number {
+    align-items: flex-start;
+    }
+    
+    .about-number span {
+    text-align: left;
     }
     
     .form {
@@ -177,20 +554,87 @@ PÁGINAS INTERNAS
     .form button {
     width: 100%;
     }
-    
     }
     
+    @media (max-width: 600px) {
     
-    @media (max-width: 500px) {
+    .header {
+    padding: 16px 5%;
+    }
+    
+    .header-button {
+    display: none;
+    }
+    
+    .nav {
+    gap: 14px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    }
+    
+    .nav a {
+    white-space: nowrap;
+    font-size: 13px;
+    }
+    
+    .hero {
+    width: 90%;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    }
+    
+    .hero h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+    }
+    
+    .hero p {
+    font-size: 16px;
+    }
+    
+    .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    }
+    
+    .primary-button,
+    .secondary-button {
+    text-align: center;
+    }
+    
+    .hero-image {
+    height: 330px;
+    }
+    
+    .features,
+    .about {
+    width: 90%;
+    }
+    
+    .section-heading h2 {
+    font-size: 28px;
+    }
+    
+    .about {
+    padding: 30px;
+    }
+    
+    .about h2 {
+    font-size: 27px;
+    }
+    
+    .footer {
+    flex-direction: column;
+    gap: 15px;
+    }
     
     .page {
     padding: 20px;
-    
+    margin-top: 35px;
     border-radius: 12px;
     }
     
     .page-header h1 {
     font-size: 30px;
     }
-    
     }
