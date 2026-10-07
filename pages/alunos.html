@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alunos - Biblioteca</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+📚 Biblioteca
+</div>
+
+<nav>
+<a href="../index.html">Início</a>
+<a href="livros.html">Livros</a>
+<a href="alunos.html">Alunos</a>
+<a href="emprestimos.html">Empréstimos</a>
+</nav>
+
+</header>
+
+<main class="container">
+
+<section class="page">
+
+<h1>Cadastro de Alunos</h1>
+
+<form class="form" id="formAluno">
+
+<label for="nome">Nome</label>
+
+<input
+type="text"
+id="nome"
+placeholder="Digite o nome do aluno"
+required
+>
+
+<label for="matricula">Matrícula</label>
+
+<input
+type="text"
+id="matricula"
+placeholder="Digite a matrícula"
+required
+>
+
+<label for="turma">Turma</label>
+
+<input
+type="text"
+id="turma"
+placeholder="Digite a turma"
+required
+>
+
+<button type="submit">
+Cadastrar aluno
+</button>
+
+</form>
+
+<h2>Alunos cadastrados</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nome</th>
+<th>Matrícula</th>
+<th>Turma</th>
+</tr>
+
+</thead>
+
+<tbody id="listaAlunos">
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 - Sistema Biblioteca</p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
